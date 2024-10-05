@@ -1,7 +1,7 @@
 " config/plugin_configs.vim
 
-" NERDTree config
-autocmd vimenter * NERDTree
+" NERDTree config -- bascially open the NerdTree as soon as you open vim
+" autocmd vimenter * NERDTree
 
 " Airline configuration
 let g:airline#extensions#tabline#enabled = 1
