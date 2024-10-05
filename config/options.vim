@@ -2,7 +2,8 @@
 
 " General settings
 set number                  " Show line numbers
-set relativenumber          " Relative line numbers
+
+" set relativenumber          Relative line numbers
 set cursorline              " Highlight the current line
 set expandtab               " Use spaces instead of tabs
 set tabstop=4               " Number of spaces per Tab
