@@ -18,6 +18,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'morhetz/gruvbox'
 
+
+" Auto-pairing plugin
+Plug 'jiangmiao/auto-pairs'
+
+
 " Git integration
 Plug 'tpope/vim-fugitive'            " Git commands in vim
 
