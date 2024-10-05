@@ -8,6 +8,7 @@ let mapleader = " "
 nnoremap <Leader>w :w<CR>               " Save file
 nnoremap <C-s>     :w<CR>
 inoremap <C-s>     :<Esc>w<CR>
+inoremap <C-d>      <Delete>
 
 nnoremap <C-q>     :q<CR>               " Quit file
 inoremap kj <Esc>                       " Fast exit insert mode

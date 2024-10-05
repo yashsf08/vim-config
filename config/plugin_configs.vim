@@ -7,7 +7,7 @@
 " Basic settings for NERDTree
 let NERDTreeShowHidden=1  " Show hidden files (like .git, .env, etc.)
 let NERDTreeMinimalUI=1   " Simplify the NERDTree UI
-let NERDTreeIgnore=['\.pyc$', '\~$', '\.class$']  " Ignore Python bytecode and backup files
+let NERDTreeIgnore=['\.pyc$', '\~$', '\.class$', '\.swp$']  " Ignore Python bytecode and backup files
 let NERDTreeAutoDeleteBuffer=1  " Close buffer when NERDTree opens a file
 
 " Open files in NERDTree with Enter instead of opening a split
@@ -50,7 +50,7 @@ nnoremap <Leader>f :Files<CR>
  
 " Use coc for autocompletion
 inoremap <silent><expr> <C-Space> coc#refresh()
-let g:coc_global_extensions = ['coc-json', 'coc-python', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-json', 'coc-python', 'coc-java', 'coc-clangd'] " coc-tsserver 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Pairs

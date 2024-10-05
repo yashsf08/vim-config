@@ -30,7 +30,7 @@ Plug 'tpope/vim-fugitive'            " Git commands in vim
 " Alternative to Tree-sitter: vim-polyglot for enhanced syntax highlighting
 " Syntax & Language Support
 Plug 'sheerun/vim-polyglot'          " Language packs
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Autocompletion engine
+Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Autocompletion engine
 
 " LSP support for code navigation and IDE features
 Plug 'prabirshrestha/vim-lsp'
