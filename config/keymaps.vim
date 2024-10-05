@@ -71,8 +71,10 @@ nnoremap <Leader>c  :close<CR>
 nnoremap <Leader>bo :bufdo bdelete<CR>:e#<CR>
 
 " move between buffers
-nnoremap <A-l>  :bnext<CR>
-nnoremap <A-h>  :bprev<CR>
+" nnoremap <A-l>  :bnext<CR>
+" nnoremap <A-h>  :bprev<CR>
+nnoremap <Tab>  :bnext<CR>
+nnoremap <S-Tab>  :bprev<CR>
 
 nnoremap <S-l>  $
 nnoremap <S-h>  0

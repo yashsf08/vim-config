@@ -16,4 +16,5 @@ set mouse=a                         " Enable mouse support
 set ignorecase                      " Ignore case when searching
 set smartcase                       " Use smart case search
 set clipboard^=unnamed,unnamedplus  " Using system clipboard    
+set hlsearch
 

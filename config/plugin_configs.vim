@@ -30,16 +30,24 @@ if exists('*WebDevIconsGetFileTypeSymbol')
 endif
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => lightline/Airline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Airline configuration
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => FZF
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 nnoremap <Leader>f :Files<CR>
 
-" coc.nvim settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => CoC.nvim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+ 
 " Use coc for autocompletion
 inoremap <silent><expr> <C-Space> coc#refresh()
 let g:coc_global_extensions = ['coc-json', 'coc-python', 'coc-tsserver']

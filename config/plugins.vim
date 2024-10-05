@@ -15,6 +15,7 @@ Plug 'tpope/vim-commentary'          " Commenting utility
 Plug 'tpope/vim-surround'            " Surround text objects
 Plug 'vim-airline/vim-airline'       " Status line
 Plug 'vim-airline/vim-airline-themes'
+" Plug 'itchyny/lightline.vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'morhetz/gruvbox'
 
