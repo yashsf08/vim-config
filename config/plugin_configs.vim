@@ -50,7 +50,28 @@ nnoremap <Leader>f :Files<CR>
  
 " Use coc for autocompletion
 inoremap <silent><expr> <C-Space> coc#refresh()
+
+
+" Enable SnipMate snippets in coc.nvim
+let g:coc_snippet_next = '<Tab>'
+let g:coc_snippet_prev = '<S-Tab>'
+
+
+
+
 let g:coc_global_extensions = ['coc-json', 'coc-python', 'coc-java', 'coc-clangd'] " coc-tsserver 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => snipMate (beside <TAB> support <CTRL-j>)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable SnipMate
+let g:snipMate = {}
+let g:snipMate.no_default_aliases = 1  " Disable default aliases if you want customizations
+let g:snipMate = { 'snippet_version' : 1 }
+
+ino <C-j> <C-r>=snipMate#TriggerSnippet()<cr>
+snor <C-j> <esc>i<right><C-r>=snipMate#TriggerSnippet()<cr>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Pairs

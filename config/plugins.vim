@@ -32,6 +32,12 @@ Plug 'tpope/vim-fugitive'            " Git commands in vim
 Plug 'sheerun/vim-polyglot'          " Language packs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Autocompletion engine
 
+" Code Snippets
+Plug 'MarcWeber/vim-addon-mw-utils'  " Deps for SnipMate
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'  " Snippet library for various languages
+
+
 " LSP support for code navigation and IDE features
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
