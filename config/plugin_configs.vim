@@ -43,6 +43,9 @@ let g:airline_powerline_fonts = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>F :Rg<CR>
+
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => CoC.nvim
