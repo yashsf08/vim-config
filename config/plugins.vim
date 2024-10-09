@@ -54,4 +54,7 @@ Plug 'honza/vim-snippets'  " Snippet library for various languages
 " Plug 'dense-analysis/ale'
 
 
+" Spcific to python 
+Plug 'vim-python/python-syntax'
+
 call plug#end()

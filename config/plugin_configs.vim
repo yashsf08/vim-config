@@ -104,7 +104,11 @@ autocmd FileType python let b:AutoPairs = {
 " Optional: Disable auto-pairs for specific file types
 " autocmd FileType markdown let b:AutoPairs = {}
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => python-development
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+let g:python_highlight_all = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editor Configs
