@@ -33,7 +33,8 @@ Plug 'jiangmiao/auto-pairs'
 
 
 " Git integration
-Plug 'tpope/vim-fugitive'            " Git commands in vim
+" Plug 'tpope/vim-fugitive'            " Git commands in vim
+Plug 'airblade/vim-gitgutter'
 
 " Alternative to Tree-sitter: vim-polyglot for enhanced syntax highlighting
 " Syntax & Language Support

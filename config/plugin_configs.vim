@@ -114,6 +114,45 @@ autocmd FileType python let b:AutoPairs = {
 let g:python_highlight_all = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NOTE: not really need at this moment because I can directly use lazy git
+" then using a client itself inside vim
+
+" let g:netrw_browser_viewer = 'xdg-open' " Linux
+" let g:netrw_browser_viewer = 'open' " macOS
+
+" let g:netrw_browsex_viewer = "wslview"
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => git Gutter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" TODO: basic implementation is done came improve on it later
+
+let g:gitgutter_map_keys = 0     " disable default key binds
+let g:gitgutter_max_signs = 500  " default value (Vim < 8.1.0614, Neovim < 0.4.0)
+let g:gitgutter_max_signs = -1   " default value (otherwise)
+let g:gitgutter_show_msg_on_hunk_jumping = 1
+let g:gitgutter_enabled = 0
+
+let g:gitgutter_sign_added = ''
+let g:gitgutter_sign_modified = ''
+let g:gitgutter_sign_removed = ''
+let g:gitgutter_sign_removed_first_line = ''
+let g:gitgutter_sign_removed_above_and_below = ''
+let g:gitgutter_sign_modified_removed = ''
+
+" Keybinds
+nmap <Leader>gj :GitGutterNextHunk<CR>
+nmap <Leader>gk :GitGutterPrevHunk<CR>
+nnoremap <Leader>gs :GitGutterStageHunk<CR>
+nnoremap <Leader>gu :GitGutterUndoHunk<CR>
+nnoremap <Leader>gb :GitGutterBlameLine<CR>
+nnoremap <Leader>gt :GitGutterToggle<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editor Configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
