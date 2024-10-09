@@ -126,3 +126,29 @@ nnoremap <Leader>e :NERDTreeToggle<CR>
 " Yank to system clipboard
 vnoremap <Leader>y "+y
 
+
+" Cpp Development
+
+" Settings for C++ build
+
+" Compile and run C++14 code
+nnoremap <F8> :!g++ -lstdc++ -std=c++14 % && ./a.out<CR>
+inoremap <F8> <ESC>:w<CR>:!g++ -fsanitize=address -std=c++17 -DONPC -O2 -o %< % && ./%< < input.txt<CR>
+
+" Compile C++14 code with additional libraries and run with input/output redirection
+nnoremap <F3> :!g++ -lstdc++ -std=c++14 -lm -ldl % -o %:r && %:r < %:p:h/input.txt > %:p:h/output.txt<CR>
+
+" Compile and run C++17 code with sanitizers, warnings, and input redirection (Normal Mode)
+nnoremap <F9> <ESC>:w<CR>:!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <CR>
+
+" Compile and run C++17 code with sanitizers, warnings, and input redirection (Insert Mode)
+inoremap <F9> <ESC>:w<CR>:!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <CR>
+
+" Compile and run C++17 code with sanitizers, warnings, input from 'inp' (Normal Mode)
+nnoremap <F10> <ESC>:w<CR>:!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< < inp<CR>
+
+" Compile and run C++17 code with sanitizers, warnings, input from 'inp' (Insert Mode)
+inoremap <F10> <ESC>:w<CR>:!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< < inp<CR>
+
+
+
