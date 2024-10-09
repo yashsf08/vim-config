@@ -47,10 +47,11 @@ Plug 'honza/vim-snippets'  " Snippet library for various languages
 
 
 " LSP support for code navigation and IDE features
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
 
 " Alternative for linting and static analysis: ALE
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
+
 
 call plug#end()
