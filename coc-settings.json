@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/home/yash/miniconda3/bin/python3", // Update this path to your Python executable
+    "python.formatting.provider": "black", // Choose your preferred formatter
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "coc.preferences.formatOnSave": true,
+    // "python.analysis.typeCheckingMode": "basic" // or "strict" // @yash -> for some reason it is not allowed.
+}
