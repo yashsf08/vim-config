@@ -3,7 +3,6 @@
 " NERDTree config -- bascially open the NerdTree as soon as you open vim
 " autocmd vimenter * NERDTree
 
-
 " Basic settings for NERDTree
 let NERDTreeShowHidden=1  " Show hidden files (like .git, .env, etc.)
 let NERDTreeMinimalUI=1   " Simplify the NERDTree UI
@@ -29,7 +28,6 @@ if exists('*WebDevIconsGetFileTypeSymbol')
         \ }
 endif
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => lightline/Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,10 +43,12 @@ let g:airline_powerline_fonts = 1
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>F :Rg<CR>
 
+let g:fzf_layout = { 'down': '~40%' }
+let $FZF_DEFAULT_OPTS = '--cycle'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => CoC.nvim
+" => CoC.nvim ---> OLD
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
  
 " Use coc for autocompletion
@@ -82,7 +82,7 @@ snor <C-j> <esc>i<right><C-r>=snipMate#TriggerSnippet()<cr>
 
 " Basic configuration for auto-pairs
 let g:AutoPairsMapBS = 1  " Allow backspace to delete bracket pairs
-let g:AutoPairsMapCR = 1  " Auto complete pairs on Enter
+let g:AutoPairsMapCR = 0  " Auto complete pairs on Enter | @Yash - Avoid since conflicting the key binds for <cr> 
 let g:AutoPairsFlyMode = 0  " Disable fly mode for better control
 
 " Java-specific configuration
