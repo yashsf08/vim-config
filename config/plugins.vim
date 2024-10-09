@@ -25,6 +25,9 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'morhetz/gruvbox'
 
 
+Plug 'editorconfig/editorconfig-vim'
+
+
 " Auto-pairing plugin
 Plug 'jiangmiao/auto-pairs'
 
