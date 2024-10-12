@@ -24,9 +24,13 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'morhetz/gruvbox'
 Plug 'whatyouhide/vim-gotham'
+Plug 'vim-scripts/wombat256.vim'
 
+" Editor Configs to make it better
 Plug 'editorconfig/editorconfig-vim'
 
+" Starting Screen
+Plug 'mhinz/vim-startify'
 
 " Auto-pairing plugin
 Plug 'jiangmiao/auto-pairs'
