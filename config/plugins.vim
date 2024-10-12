@@ -23,7 +23,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Themes
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'morhetz/gruvbox'
-
+Plug 'whatyouhide/vim-gotham'
 
 Plug 'editorconfig/editorconfig-vim'
 
@@ -33,7 +33,7 @@ Plug 'jiangmiao/auto-pairs'
 
 
 " Git integration
-" Plug 'tpope/vim-fugitive'            " Git commands in vim
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " Alternative to Tree-sitter: vim-polyglot for enhanced syntax highlighting
@@ -42,8 +42,10 @@ Plug 'sheerun/vim-polyglot'          " Language packs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Autocompletion engine
 
 " Code Snippets
-Plug 'MarcWeber/vim-addon-mw-utils'  " Deps for SnipMate
-Plug 'garbas/vim-snipmate'
+" Plug 'MarcWeber/vim-addon-mw-utils'  " Deps for SnipMate
+" Plug 'garbas/vim-snipmate'           " engine for snippet
+
+Plug 'SirVer/ultisnips'              " another engine for snippet
 Plug 'honza/vim-snippets'  " Snippet library for various languages
 
 

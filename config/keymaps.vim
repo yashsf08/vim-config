@@ -13,6 +13,10 @@ inoremap <C-d>      <Delete>
 nnoremap <C-q>     :q<CR>               " Quit file
 inoremap kj <Esc>                       " Fast exit insert mode
 
+
+nnoremap <CR>      o<Esc>k
+inoremap ,         ,<Space>
+
 " Window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
