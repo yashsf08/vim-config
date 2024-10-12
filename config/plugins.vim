@@ -25,8 +25,10 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'morhetz/gruvbox'
 Plug 'whatyouhide/vim-gotham'
 Plug 'vim-scripts/wombat256.vim'
+Plug 'mhartington/oceanic-next'
 
 " Editor Configs to make it better
+"
 Plug 'editorconfig/editorconfig-vim'
 
 " Starting Screen
